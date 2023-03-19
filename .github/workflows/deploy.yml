@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+    workflow_dispatch:
+        inputs:
+            branch:
+                description: 'Branch to deploy'
+                required: true
+                default: 'main'
+
+jobs:
+    deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                path: 'website'
+            - uses: actions/checkout@v3
+              with:
+                repository: 'HelloAOLab/bible-api',
+                ref: ${{ github.event.inputs.branch }}
+                path: 'api'
+            - name: Yarn Install
+              run: |
+                  cd website
+                  yarn
+                  cd ../api
+                  yarn
+            - name: Build API
+              working-directory: 'api'
+              run: |
+                  yarn build-api
+            - name: Deploy
+              working-directory: 'website'
+              run: |
+                  yarn exec gh-pages -d ../api/build
