@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reference | Bible API</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="An easy-to-use and fully featured JSON API for accessing the Bible">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.ed3d81a3.css" as="style"><link rel="preload" href="/docs/assets/js/app.75defa21.js" as="script"><link rel="preload" href="/docs/assets/js/2.63c13255.js" as="script"><link rel="preload" href="/docs/assets/js/14.df3063ef.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.178fff8a.js"><link rel="prefetch" href="/docs/assets/js/11.f74f4e3b.js"><link rel="prefetch" href="/docs/assets/js/12.78f25842.js"><link rel="prefetch" href="/docs/assets/js/13.9cf04243.js"><link rel="prefetch" href="/docs/assets/js/3.2f9dfbc7.js"><link rel="prefetch" href="/docs/assets/js/4.832274fd.js"><link rel="prefetch" href="/docs/assets/js/5.e457cf98.js"><link rel="prefetch" href="/docs/assets/js/6.8d81f0ec.js"><link rel="prefetch" href="/docs/assets/js/7.159f2f50.js"><link rel="prefetch" href="/docs/assets/js/8.274990b3.js"><link rel="prefetch" href="/docs/assets/js/9.6a63ad8e.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.ed3d81a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Bible API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/reference/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Reference
+</a></div><div class="nav-item"><a href="https://github.com/HelloAOLab/bible-api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Source Code
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/reference/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Reference
+</a></div><div class="nav-item"><a href="https://github.com/HelloAOLab/bible-api" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Source Code
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/reference/#available-translations" class="sidebar-link">Available Translations</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/reference/#list-books-in-a-translation" class="sidebar-link">List Books in a Translation</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/reference/#get-a-chapter-from-a-translation" class="sidebar-link">Get a Chapter from a Translation</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="reference"><a href="#reference" class="header-anchor">#</a> Reference</h1> <h2 id="available-translations"><a href="#available-translations" class="header-anchor">#</a> Available Translations</h2> <p><code>GET https://bible.helloao.org/api/available_translations.json</code></p> <p>Gets the list of available translations in the API.</p> <h4 id="structure"><a href="#structure" class="header-anchor">#</a> Structure</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">AvailableTranslations</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The list of translations.
+     */</span>
+    translations<span class="token operator">:</span> Translation<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Translation</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The ID of the translation.
+     */</span>
+    id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The name of the translation.
+     * This is usually the name of the translation in the translation's language.
+     */</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The English name of the translation.
+     */</span>
+    englishName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The website for the translation.
+     */</span>
+    website<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The URL that the license for the translation can be found.
+     */</span>
+    licenseUrl<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The short name for the translation.
+     */</span>
+    shortName<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The RFC 5646 letter language tag that the translation is primarily in.
+     */</span>
+    language<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The available list of formats.
+     */</span>
+    availableFormats<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token string">'json'</span> <span class="token operator">|</span> <span class="token string">'usfm'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The API link for the list of available books for this translation.
+     */</span>
+    listOfBooksApiLink<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="example"><a href="#example" class="header-anchor">#</a> Example</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;translations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Berean Standard Bible&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;shortName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;licenseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible/terms.htm&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;availableFormats&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;json&quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;listOfBooksApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/books.json&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="list-books-in-a-translation"><a href="#list-books-in-a-translation" class="header-anchor">#</a> List Books in a Translation</h2> <p><code>GET https://bible.helloao.org/api/{translation}/books.json</code></p> <p>Gets the list of books that are available for the given translation.</p> <h4 id="structure-2"><a href="#structure-2" class="header-anchor">#</a> Structure</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">TranslationBooks</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The translation information for the books.
+     */</span>
+    translation<span class="token operator">:</span> Translation<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The list of books that are available for the translation.
+     */</span>
+    books<span class="token operator">:</span> TranslationBook<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">TranslationBook</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The ID of the book.
+     */</span>
+    id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The name that the translation provided for the book.
+     */</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The common name for the book.
+     */</span>
+    commonName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The number of chapters that the book contains.
+     */</span>
+    numberOfChapters<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The link to the first chapter of the book.
+     */</span>
+    firstChapterApiLink<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The link to the last chapter of the book.
+     */</span>
+    lastChapterApiLink<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="example-2"><a href="#example-2" class="header-anchor">#</a> Example</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;translation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Berean Standard Bible&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;shortName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;licenseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible/terms.htm&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;availableFormats&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;json&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;listOfBooksApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/books.json&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;books&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GEN&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;commonName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Genesis&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;firstChapterApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/Genesis/1.json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;numberOfChapters&quot;</span><span class="token operator">:</span> <span class="token number">50</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="get-a-chapter-from-a-translation"><a href="#get-a-chapter-from-a-translation" class="header-anchor">#</a> Get a Chapter from a Translation</h2> <p><code>GET https://bible.helloao.org/api/{translation}/{book}/{chapter}.json</code></p> <p>Gets the content of a single chapter for a given book and translation.</p> <h4 id="structure-3"><a href="#structure-3" class="header-anchor">#</a> Structure</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">TranslationBookChapter</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The translation information for the book chapter.
+     */</span>
+    translation<span class="token operator">:</span> Translation<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The book information for the book chapter.
+     */</span>
+    book<span class="token operator">:</span> TranslationBook<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The link to the next chapter.
+     * Null if this is the last chapter in the book.
+     */</span>
+    nextChapterApiLink<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The link to the previous chapter.
+     * Null if this is the first chapter in the book.
+     */</span>
+    previousChapterApiLink<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The information for the chapter.
+     */</span>
+    chapter<span class="token operator">:</span> ChapterData<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">ChapterData</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The number of the chapter.
+     */</span>
+    <span class="token builtin">number</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The content of the chapter.
+     */</span>
+    content<span class="token operator">:</span> ChapterContent<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The list of footnotes for the chapter.
+     */</span>
+    footnotes<span class="token operator">:</span> ChapterFootnote<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * A union type that represents a single piece of chapter content.
+ * A piece of chapter content can be one of the following things:
+ * - A heading.
+ * - A line break.
+ * - A verse.
+ * - A Hebrew Subtitle.
+ */</span>
+<span class="token keyword">type</span> <span class="token class-name">ChapterContent</span> <span class="token operator">=</span> ChapterHeading <span class="token operator">|</span> ChapterLineBreak <span class="token operator">|</span> ChapterVerse <span class="token operator">|</span> ChapterHebrewSubtitle<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * A heading in a chapter.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">ChapterHeading</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Indicates that the content represents a heading.
+     */</span>
+    type<span class="token operator">:</span> <span class="token string">'heading'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The content for the heading.
+     * If multiple strings are included in the array, they should be concatenated with a space.
+     */</span>
+    content<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * A line break in a chapter.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">ChapterLineBreak</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Indicates that the content represents a line break.
+     */</span>
+    type<span class="token operator">:</span> <span class="token string">'line_break'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * A Hebrew Subtitle in a chapter.
+ * These are often used included as informational content that appeared in the original manuscripts.
+ * For example, Psalms 49 has the Hebrew Subtitle &quot;To the choirmaster. A Psalm of the Sons of Korah.&quot;
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">ChapterHebrewSubtitle</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Indicates that the content represents a Hebrew Subtitle.
+     */</span>
+    type<span class="token operator">:</span> <span class="token string">'hebrew_subtitle'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The list of content that is contained in the subtitle.
+     * Each element in the list could be a string, formatted text, or a footnote reference.
+     */</span>
+    content<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token operator">|</span> FormattedText <span class="token operator">|</span> VerseFootnoteReference<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * A verse in a chapter.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">ChapterVerse</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Indicates that the content is a verse.
+     */</span>
+    type<span class="token operator">:</span> <span class="token string">'verse'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The number of the verse.
+     */</span>
+    <span class="token builtin">number</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">/**
+     * The list of content for the verse.
+     * Each element in the list could be a string, formatted text, or a footnote reference.
+     */</span>
+    content<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token builtin">string</span> <span class="token operator">|</span> FormattedText <span class="token operator">|</span> VerseFootnoteReference<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Formatted text. That is, text that is formated in a particular manner.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">FormattedText</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The text that is formatted.
+     */</span>
+    text<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * Whether the text represents a poem.
+     * The number indicates the level of indent.
+     * 
+     * Common in Psalms.
+     */</span>
+    poem<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * Whether the text represents the Words of Jesus.
+     */</span>
+    wordsOfJesus<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * A footnote reference in a verse or a Hebrew Subtitle.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">VerseFootnoteReference</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The ID of the note.
+     */</span>
+    noteId<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Information about a footnote.
+ */</span>
+<span class="token keyword">interface</span> <span class="token class-name">ChapterFootnote</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The ID of the note that is referenced.
+     */</span>
+    noteId<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The text of the footnote.
+     */</span>
+    text<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * The verse reference for the footnote.
+     */</span>
+    reference<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        chapter<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+        verse<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="example-3"><a href="#example-3" class="header-anchor">#</a> Example</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;translation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Berean Standard Bible&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;shortName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BSB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;licenseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible/terms.htm&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://berean.bible&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;availableFormats&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;json&quot;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;listOfBooksApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/books.json&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;book&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GEN&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;commonName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Genesis&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;firstChapterApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/Genesis/1.json&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lastChapterApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/Genesis/50.json&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;numberOfChapters&quot;</span><span class="token operator">:</span> <span class="token number">50</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;nextChapterApiLink&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bible/BSB/Genesis/2.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;previousChapterApiLink&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;heading&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;The Creation&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line_break&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verse&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;In the beginning God created the heavens and the earth.&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line_break&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verse&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters.&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;heading&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;The First Day&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line_break&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verse&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;And God said, “Let there be light,”&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;and there was light.&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verse&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;And God saw that the light was good, and He separated the light from the darkness.&quot;</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verse&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;God called the light “day,” and the darkness He called “night.”&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;And there was evening, and there was morning—the first day.&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;footnotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Cited in 2 Corinthians 4:6&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;verse&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Literally day one&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;verse&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Or a canopy or a firmament or a vault; also in verses 7, 8, 14, 15, 17, and 20&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;verse&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MT; Syriac and over all the beasts of the earth&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;verse&quot;</span><span class="token operator">:</span> <span class="token number">26</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;noteId&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Cited in Matthew 19:4 and Mark 10:6&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;chapter&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;verse&quot;</span><span class="token operator">:</span> <span class="token number">27</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.75defa21.js" defer></script><script src="/docs/assets/js/2.63c13255.js" defer></script><script src="/docs/assets/js/14.df3063ef.js" defer></script>
+  </body>
+</html>
