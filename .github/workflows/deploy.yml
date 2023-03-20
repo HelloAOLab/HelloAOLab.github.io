@@ -24,6 +24,9 @@ jobs:
                   repository: 'HelloAOLab/bible-api'
                   ref: ${{ github.event.inputs.branch }}
                   path: 'api'
+            - name: Update Yarn
+              run: |
+                  npm install -g yarn
             - name: Yarn Install
               run: |
                   cd website
