@@ -37,4 +37,7 @@ jobs:
             - name: Deploy
               working-directory: 'website'
               run: |
-                  yarn exec gh-pages -d ../api/build
+                  git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                  yarn run deploy
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
